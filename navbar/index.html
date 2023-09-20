@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            color: #444;
+           
+            background-color: #eeeeee;
+            padding: 30px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            position: relative;
+            margin: 0 20px;
+            overflow: hidden; /* Hide overflow for icon animation */
+            transition: max-height 0.3s ease; /* Add animation for max-height */
+            max-height: 2rem; /* Initial max-height, hides icon */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #6d6b6b;
+            display: inline-block; /* Display the link for proper alignment */
+            vertical-align: middle; /* Align the link vertically */
+        }
+
+        .navbar .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #eeeeee;
+            padding: 10px;
+            z-index: 1;
+            display: none;
+            opacity: 0; /* Initially hidden and transparent */
+            transform: translateY(-20px); /* Initial position above the item */
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Add animation for opacity and transform */
+        }
+
+        .navbar li:hover .sub-menu {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Add styles for icons */
+        .navbar img {
+            width: 2rem;
+            height: auto;
+            vertical-align: middle; /* Align the icon vertically */
+            transition: transform 0.3s ease; /* Add animation for transform */
+        }
+
+        .navbar li:hover img {
+            transform: translateY(-100%); /* Move the icon upward */
+        }
+        .icon1{
+           width: 5vw;
+           align-items:center ;
+           align-self: center;
+           padding-bottom: 10px;
+        }
+        .icon2{
+           width: 8vw;
+           align-items:center ;
+           align-self: center;
+           padding-bottom: 20px;
+        }
+        .icon3{
+           width: 5.5vw;
+           align-items:center ;
+           align-self: center;
+           padding-bottom: 20px;
+        }
+        .icon4{
+           width: 5vw;
+           align-items:center ;
+           align-self: center;
+           padding-bottom: 20px;
+        }
+        .icon5{
+           width: 5vw;
+           align-items:center ;
+           align-self: center;
+           padding-bottom: 20px;
+        }
+        .list1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1.5vw;
+           padding-bottom: 1.5vw;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="list1">
+                <img class="icon1" src="/icon1.png" alt=""><a href="#">TRENDING DEALS</a></li>
+            <li class="list1">
+                <img class="icon2" src="/pngtree-laptop-icon-png-image_6606927.png" alt="">
+                <a href="#">LAPTOP</a>
+                <div class="sub-menu">
+                    <a href="#">Refurbished laptop</a>
+                    <a href="#">Open box laptop</a>
+                    <a href="#">Desktop</a>
+                    <a href="#">Monitor</a>
+                    <a href="#">Server</a>
+                </div>
+            </li>
+            <li class="list1">
+                <img class="icon3" src="/3381949.png" alt="">
+                <a href="#">DESKTOP</a>
+                <div class="sub-menu">
+                    <a href="#">Refurbished Desktop</a>
+                    <a href="#">Brand Refurbished Desktop</a>
+                    <a href="#">Open Box Desktop</a>
+                </div>
+            </li>
+            <li class="list1">
+                <img class="icon4" src="/70535.png" alt="">
+                <a href="#">PREMIUM SERIES</a></li>
+            <li class="list1">
+                <img class="icon5"src="/8134678.png" alt="">
+                <a href="#">ITAD-EWASTE</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
